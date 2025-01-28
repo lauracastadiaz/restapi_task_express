@@ -12,16 +12,16 @@ const db = mysql.createPool({
     queueLimit: 0,
 });
 
-db.connect((err) => {
-	if (err) {
-		console.error(
-			"❌ Error al conectar la base de datos:",
-			err.code,
-			err.sqlMessage
-		);
-		return;
-	}
-	console.log("✅ Conexión exitosa a la base de datos");
-});
+// db.connect((err) => {
+// 	if (err) {
+// 		console.error(
+// 			"❌ Error al conectar la base de datos:",
+// 			err.code,
+// 			err.sqlMessage
+// 		);
+// 		return;
+// 	}
+// 	console.log("✅ Conexión exitosa a la base de datos");
+// });
 
 module.exports = db;
